@@ -30,7 +30,7 @@ import { CommonModule } from '@angular/common';
           </div>
           <div class="col-lg-6 hero-image slide-in-right">
             <img 
-              src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800" 
+              src="/assets/images/hero-banner.jpeg" 
               alt="Modern office workspace with technology setup"
               class="img-fluid">
           </div>
