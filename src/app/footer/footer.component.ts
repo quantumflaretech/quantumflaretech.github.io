@@ -56,6 +56,11 @@ import { CommonModule } from '@angular/common';
               <i class="bi bi-envelope me-2"></i>
               info&#64;quantumflaretechnologies.com
             </p>
+            <p class="text-light-emphasis">
+            <i class="bi bi-geo-alt-fill me-2"></i>
+            #323, 1st F Main Road, Koramangala 8th Block, Banglore, India - 560034
+          </p>
+
           </div>
         </div>
         
