@@ -7,72 +7,51 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-4">
-            <h5 class="text-white mb-3">
-              <i class="bi bi-lightning-charge-fill me-2"></i>
+      <div class="qf-container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <i class="fa-solid fa-bolt"></i>
               Quantum Flare Technologies
-            </h5>
-            <p class="text-light-emphasis">
-              Transforming ideas into innovative technology solutions that drive business success.
-            </p>
-          </div>
-          
-          <div class="col-lg-2 mb-4">
-            <h6 class="text-white mb-3">Services</h6>
-            <ul class="footer-links">
-              <li><a href="#services" class="text-light-emphasis">App Development</a></li>
-              <li><a href="#services" class="text-light-emphasis">Web Development</a></li>
-              <li><a href="#services" class="text-light-emphasis">Data Engineering</a></li>
-              <li><a href="#services" class="text-light-emphasis">AI Systems</a></li>
-            </ul>
-          </div>
-          
-          <div class="col-lg-2 mb-4">
-            <h6 class="text-white mb-3">Company</h6>
-            <ul class="footer-links">
-              <li><a href="#about" class="text-light-emphasis">About Us</a></li>
-              <li><a href="#contact" class="text-light-emphasis">Contact</a></li>
-              <li><a href="#" class="text-light-emphasis">Careers</a></li>
-              <li><a href="#" class="text-light-emphasis">Blog</a></li>
-            </ul>
-          </div>
-          
-          <div class="col-lg-4 mb-4">
-            <h6 class="text-white mb-3">Connect</h6>
-            <div class="social-links mb-3">
-              <a href="#" class="social-link">
-                <i class="bi bi-linkedin"></i>
-              </a>
-              <a href="#" class="social-link">
-                <i class="bi bi-twitter"></i>
-              </a>
-              <a href="#" class="social-link">
-                <i class="bi bi-github"></i>
-              </a>
             </div>
-            <p class="text-light-emphasis">
-              <i class="bi bi-envelope me-2"></i>
+            <p>AI engineering for teams that ship.</p>
+            <div class="footer-social">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div>
+            <h6>Services</h6>
+            <ul>
+              <li><a href="#services">AI Systems</a></li>
+              <li><a href="#services">RAG Applications</a></li>
+              <li><a href="#services">Web & Mobile</a></li>
+              <li><a href="#services">Cloud Infrastructure</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Company</h6>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Contact</h6>
+            <p>
+              <i class="fa-solid fa-envelope" style="color: var(--accent-primary); margin-right: 6px; font-size: 11px;"></i>
               info&#64;quantumflaretechnologies.com
             </p>
-            <p class="text-light-emphasis">
-            <i class="bi bi-geo-alt-fill me-2"></i>
-            #323, 1st F Main Road, Koramangala 8th Block, Banglore, India - 560034
-          </p>
-
-          </div>
-        </div>
-        
-        <hr class="footer-divider">
-        
-        <div class="row">
-          <div class="col-12 text-center">
-            <p class="text-light-emphasis mb-0">
-              © 2025 Quantum Flare Technologies. All rights reserved.
+            <p style="margin-top: 8px;">
+              <i class="fa-solid fa-location-dot" style="color: var(--accent-primary); margin-right: 6px; font-size: 11px;"></i>
+              Koramangala, Bangalore 560034
             </p>
           </div>
         </div>
+        <div class="footer-line"></div>
+        <div class="footer-copy">&copy; 2025 Quantum Flare Technologies. All rights reserved.</div>
       </div>
     </footer>
   `
