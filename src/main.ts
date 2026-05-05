@@ -69,19 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 100);
 
   // Navbar scroll visibility
-  let lastScrollY = window.scrollY;
   const navbar = document.querySelector('.navbar');
-  
+
   window.addEventListener('scroll', () => {
-    const currentScrollY = window.scrollY;
-    
-    if (currentScrollY > 100) {
+    if (window.scrollY > 100) {
       navbar?.classList.add('scrolled');
     } else {
       navbar?.classList.remove('scrolled');
     }
-    
-    lastScrollY = currentScrollY;
   });
 });
 
