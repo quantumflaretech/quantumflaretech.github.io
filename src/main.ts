@@ -76,9 +76,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentScrollY = window.scrollY;
     
     if (currentScrollY > 100) {
-      navbar?.classList.add('visible');
+      navbar?.classList.add('scrolled');
     } else {
-      navbar?.classList.remove('visible');
+      navbar?.classList.remove('scrolled');
     }
     
     lastScrollY = currentScrollY;
