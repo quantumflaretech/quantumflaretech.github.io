@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 interface Service {
   icon: string;
   title: string;
   description: string;
-  color: 'blue' | 'green';
+  outcome: string;
+  featured: boolean;
 }
 
 @Component({
@@ -14,79 +15,71 @@ interface Service {
   imports: [CommonModule],
   template: `
     <section id="services" class="services-section">
-      <div class="container">
-        <h2 class="section-title">Our Core Services</h2>
-        <p class="section-subtitle">
-          We provide comprehensive technology solutions tailored to meet your business needs and drive digital transformation.
-        </p>
-        
-        <div class="services-grid">
-          <div *ngFor="let service of services; let i = index" 
-               class="service-card fade-in" 
-               [class.visible]="isVisible"
-               [style.animation-delay]="(i * 0.1) + 's'">
-            <div class="service-icon">
-              <i [class]="'bi ' + service.icon + ' ' + service.color"></i>
+      <div class="qf-container">
+        <div class="services-header">
+          <div class="section-eyebrow">CAPABILITIES</div>
+          <h2 class="section-heading">What changes when<br>you work with us</h2>
+          <p class="section-sub">Every capability built around one question: does this get you to production faster?</p>
+        </div>
+
+        <div class="bento-grid">
+          <div *ngFor="let service of services"
+               class="bento-card"
+               [class.featured]="service.featured">
+            <div class="bento-icon">
+              <i [class]="service.icon"></i>
             </div>
-            <h5 class="service-title">{{ service.title }}</h5>
-            <p class="service-description">{{ service.description }}</p>
+            <div>
+              <h4>{{ service.title }}</h4>
+              <p>{{ service.description }}</p>
+              <div class="bento-outcome">
+                <i class="fa-solid fa-arrow-right"></i>
+                {{ service.outcome }}
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <div class="gradient-transition sage-to-ivory"></div>
   `
 })
-export class ServicesComponent implements OnInit {
-  isVisible = false;
-  
+export class ServicesComponent {
   services: Service[] = [
     {
-      icon: 'bi-phone',
-      title: 'App Development',
-      description: 'Native and cross-platform mobile applications that deliver exceptional user experiences.',
-      color: 'blue'
-    },
-    {
-      icon: 'bi-globe',
-      title: 'Web Development',
-      description: 'Modern, responsive web applications built with cutting-edge technologies.',
-      color: 'green'
-    },
-    // {
-    //   icon: 'bi-database',
-    //   title: 'Data Engineering',
-    //   description: 'Scalable data pipelines and analytics solutions to unlock insights from your data.',
-    //   color: 'blue'
-    // },
-    {
-      icon: 'bi-robot',
+      icon: 'fa-solid fa-brain',
       title: 'AI Systems Development',
-      description: 'Intelligent systems and machine learning solutions that automate and optimize operations.',
-      color: 'green'
+      description: 'Custom ML pipelines that learn from your data and compound value over time. We handle the infrastructure and model ops — you own the intelligence.',
+      outcome: 'Production ML, not PowerPoint ML',
+      featured: true
     },
     {
-      icon: 'bi-search',
-      title: 'RAG Application Development',
-      description: 'Retrieval-Augmented Generation applications for enhanced AI-powered knowledge systems.',
-      color: 'blue'
+      icon: 'fa-solid fa-magnifying-glass-chart',
+      title: 'RAG Applications',
+      description: "Your organization's knowledge, instantly searchable. Verified answers sourced from your actual data.",
+      outcome: 'Answers, not search rabbit holes',
+      featured: false
     },
     {
-      icon: 'bi-box',
-      title: 'End-to-End Product Development',
-      description: 'Complete product lifecycle management from concept to deployment and maintenance.',
-      color: 'green'
+      icon: 'fa-solid fa-code',
+      title: 'Web & Mobile Apps',
+      description: 'Responsive, fast applications your users actually enjoy. Built to scale from day one.',
+      outcome: 'Ship features, not firefight bugs',
+      featured: false
     },
     {
-      icon: 'bi-server',
-      title: 'Technology Resource Provisioning',
-      description: 'Cloud infrastructure and resource management for scalable, reliable systems.',
-      color: 'blue'
+      icon: 'fa-solid fa-cubes',
+      title: 'End-to-End Products',
+      description: 'Concept to production, one team. We own the lifecycle so you focus on customers.',
+      outcome: 'One team, zero handoff friction',
+      featured: false
+    },
+    {
+      icon: 'fa-solid fa-server',
+      title: 'Cloud Infrastructure',
+      description: 'Scalable architecture designed for growth from day one. No surprise cloud bills, no single points of failure, no late-night firefighting.',
+      outcome: 'Infra that grows with you, not against you',
+      featured: true
     }
   ];
-
-  ngOnInit() {
-    setTimeout(() => {
-      this.isVisible = true;
-    }, 200);
-  }
 }
