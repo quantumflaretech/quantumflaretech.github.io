@@ -18,11 +18,6 @@ import { CommonModule } from '@angular/common';
               </div>
             </div>
             <p>AI engineering for teams that ship.</p>
-            <div class="footer-social">
-              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
           </div>
           <div>
             <h6>Services</h6>
