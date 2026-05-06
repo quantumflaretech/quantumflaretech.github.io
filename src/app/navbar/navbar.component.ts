@@ -9,7 +9,11 @@ import { CommonModule } from '@angular/common';
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#home">
-          <img src="assets/logo-horizontal.svg" alt="Quantum Flare Technologies" class="navbar-logo">
+          <img src="assets/logo-mark.svg" alt="" class="navbar-logo">
+          <div class="navbar-brand-text">
+            <span class="navbar-brand-name">Quantum Flare</span>
+            <span class="navbar-brand-sub">TECHNOLOGIES</span>
+          </div>
         </a>
 
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

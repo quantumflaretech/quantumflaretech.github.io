@@ -11,7 +11,11 @@ import { CommonModule } from '@angular/common';
         <div class="footer-grid">
           <div>
             <div class="footer-brand">
-              <img src="assets/logo-horizontal-white.svg" alt="Quantum Flare Technologies" class="footer-logo">
+              <img src="assets/logo-mark.svg" alt="" class="footer-logo">
+              <div class="footer-brand-text">
+                <span class="footer-brand-name">Quantum Flare</span>
+                <span class="footer-brand-sub">TECHNOLOGIES</span>
+              </div>
             </div>
             <p>AI engineering for teams that ship.</p>
             <div class="footer-social">
