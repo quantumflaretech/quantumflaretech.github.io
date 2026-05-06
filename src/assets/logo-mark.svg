@@ -16,12 +16,12 @@
 
   <!-- Entangled orbit A -->
   <ellipse cx="256" cy="256" rx="200" ry="100"
-           fill="none" stroke="url(#ent-a)" stroke-width="36"
+           fill="none" stroke="url(#ent-a)" stroke-width="30"
            transform="rotate(-25 256 256)"/>
 
   <!-- Entangled orbit B -->
   <ellipse cx="256" cy="256" rx="200" ry="100"
-           fill="none" stroke="url(#ent-b)" stroke-width="36"
+           fill="none" stroke="url(#ent-b)" stroke-width="30"
            transform="rotate(65 256 256)"/>
 
   <!-- Third orbit hint -->
