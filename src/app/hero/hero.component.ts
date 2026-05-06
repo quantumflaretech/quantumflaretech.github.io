@@ -68,35 +68,31 @@ import { CommonModule } from '@angular/common';
             <div class="terminal-body">
               <div class="terminal-line line-1">
                 <span class="terminal-prompt">$</span>
-                <span class="terminal-cmd">qf init</span>
-                <span class="terminal-flag">--stack</span>
-                <span class="terminal-arg">ml-pipeline</span>
+                <span class="terminal-cmd">docker compose up</span>
+                <span class="terminal-flag">-d</span>
               </div>
               <div class="terminal-line line-2">
-                <span class="terminal-muted">&#x25B8; Scaffolding project...</span>
+                <span class="terminal-muted">&#x25B8; Starting RAG pipeline...</span>
               </div>
               <div class="terminal-line line-3">
-                <span class="terminal-muted">&#x25B8; Configuring RAG pipeline...</span>
+                <span class="terminal-muted">&#x25B8; Loading embeddings model...</span>
               </div>
               <div class="terminal-line line-4">
-                <span class="terminal-muted">&#x25B8; Provisioning AWS infra...</span>
+                <span class="terminal-success">&#x2714; All services running</span>
               </div>
               <div class="terminal-line line-5">
-                <span class="terminal-success">&#x2714; Pipeline deployed to production</span>
+                <span class="terminal-prompt">$</span>
+                <span class="terminal-cmd">python</span>
+                <span class="terminal-arg">deploy.py</span>
+                <span class="terminal-flag">--env</span>
+                <span class="terminal-arg">production</span>
               </div>
               <div class="terminal-line line-6">
-                <span class="terminal-prompt">$</span>
-                <span class="terminal-cmd">qf status</span>
+                <span class="terminal-muted">&#x25B8; Pushing to AWS ECS...</span>
               </div>
               <div class="terminal-line line-7">
-                <span class="terminal-accent">&#x25CF; API</span>
-                <span class="terminal-success">healthy</span>
-                <span class="terminal-muted terminal-sep">|</span>
-                <span class="terminal-accent">&#x25CF; Model</span>
-                <span class="terminal-success">serving</span>
-                <span class="terminal-muted terminal-sep">|</span>
-                <span class="terminal-accent">&#x25CF; Latency</span>
-                <span class="terminal-success">42ms</span>
+                <span class="terminal-success">&#x2714; Live at api.client.com</span>
+                <span class="terminal-muted"> &middot; 38ms p95</span>
               </div>
               <div class="terminal-line line-8">
                 <span class="terminal-prompt">$</span>
