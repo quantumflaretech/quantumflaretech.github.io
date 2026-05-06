@@ -101,7 +101,7 @@ body {
    ============================================ */
 .navbar {
   background: var(--bg-primary);
-  padding: 14px 48px;
+  padding: 16px 48px;
   border-bottom: 1px solid var(--border-light);
   transition: box-shadow 0.3s ease;
 }
@@ -117,7 +117,7 @@ body {
 .navbar-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
 }
 
@@ -150,12 +150,12 @@ body {
   font-weight: 500;
   color: var(--text-muted);
   letter-spacing: 2.5px;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .navbar-nav .nav-link {
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-secondary) !important;
   font-weight: 500;
   padding: 8px 16px !important;
@@ -170,11 +170,11 @@ body {
 
 .nav-cta {
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   background: var(--text-primary);
   color: white !important;
-  padding: 9px 20px;
+  padding: 10px 22px;
   border-radius: 8px;
   text-decoration: none;
   margin-left: 12px;
