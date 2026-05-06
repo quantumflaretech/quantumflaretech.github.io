@@ -175,6 +175,34 @@ body {
   overflow: hidden;
 }
 
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translate(-50%, -60%);
+  background: radial-gradient(circle, rgba(13,148,136,0.06) 0%, transparent 50%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: pulseGlow 8s ease-in-out infinite;
+}
+
+.hero-orbital {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 450px;
+  transform: translate(-50%, -55%);
+  color: var(--accent-primary);
+  opacity: 0.04;
+  animation: spin 35s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
 .hero-inner {
   position: relative;
   z-index: 1;
@@ -273,6 +301,87 @@ body {
 .btn-cta-secondary:hover {
   border-color: var(--text-secondary);
   color: var(--text-primary);
+}
+
+/* ============================================
+   HERO ANIMATIONS
+   ============================================ */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.03; }
+  50% { opacity: 0.06; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hero-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 600ms ease-out forwards;
+}
+
+.hero-animate-1 { animation-delay: 0ms; }
+.hero-animate-2 { animation-delay: 150ms; }
+.hero-animate-3 { animation-delay: 300ms; }
+.hero-animate-4 { animation-delay: 450ms; }
+
+.hero-animate-fade {
+  opacity: 0;
+  animation: fadeUp 400ms ease-out 600ms forwards;
+}
+
+.hero-tech-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 48px;
+}
+
+.hero-tech-icons i {
+  font-size: 18px;
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.hero-rotating-word {
+  display: inline-block;
+  transition: opacity 0.4s ease;
+}
+
+.hero-rotating-word.fading {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-orbital {
+    animation: none;
+  }
+
+  .hero-section::before {
+    animation: none;
+    opacity: 0.04;
+  }
+
+  .hero-animate,
+  .hero-animate-fade {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
 }
 
 /* ============================================
