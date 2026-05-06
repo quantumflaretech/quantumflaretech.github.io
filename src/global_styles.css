@@ -361,11 +361,12 @@ body {
 .hero-tech-icons i {
   font-size: 18px;
   color: var(--text-muted);
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .hero-rotating-word {
   display: inline-block;
+  min-width: 5.5ch;
   transition: opacity 0.4s ease;
 }
 
@@ -486,14 +487,14 @@ body {
   animation: typeLine 0.3s ease-out forwards;
 }
 
-.line-1 { animation-delay: 0.8s; }
-.line-2 { animation-delay: 1.4s; }
-.line-3 { animation-delay: 2.0s; }
-.line-4 { animation-delay: 2.6s; }
-.line-5 { animation-delay: 3.2s; }
-.line-6 { animation-delay: 4.0s; }
-.line-7 { animation-delay: 4.6s; }
-.line-8 { animation-delay: 5.2s; }
+.line-1 { animation-delay: 2.3s; }
+.line-2 { animation-delay: 2.9s; }
+.line-3 { animation-delay: 3.5s; }
+.line-4 { animation-delay: 4.1s; }
+.line-5 { animation-delay: 4.7s; }
+.line-6 { animation-delay: 5.5s; }
+.line-7 { animation-delay: 6.1s; }
+.line-8 { animation-delay: 6.7s; }
 
 @media (prefers-reduced-motion: reduce) {
   .hero-orbital {
