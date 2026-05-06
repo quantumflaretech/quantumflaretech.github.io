@@ -9,8 +9,8 @@ import { CommonModule } from '@angular/common';
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#home">
-          <img src="assets/logo-concept-entangled.svg" alt="Quantum Flare logo" class="navbar-logo">
-          Quantum Flare
+          <img src="assets/logo-entangled-transparent.svg" alt="Quantum Flare logo" class="navbar-logo">
+          Quantum Flare Technologies
         </a>
 
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
