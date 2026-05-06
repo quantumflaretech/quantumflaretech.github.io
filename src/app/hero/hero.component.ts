@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,20 +7,30 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <section id="home" class="hero-section">
+      <!-- Background SVG orbital accent -->
+      <svg class="hero-orbital" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="250" cy="250" rx="220" ry="80" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(-15 250 250)"/>
+        <ellipse cx="250" cy="250" rx="180" ry="120" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(35 250 250)"/>
+        <ellipse cx="250" cy="250" rx="160" ry="200" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(-60 250 250)"/>
+        <circle cx="470" cy="230" r="4" fill="currentColor"/>
+        <circle cx="120" cy="340" r="3" fill="currentColor"/>
+        <circle cx="300" cy="60" r="3.5" fill="currentColor"/>
+      </svg>
+
       <div class="hero-inner">
-        <div class="hero-eyebrow">
+        <div class="hero-eyebrow hero-animate hero-animate-1">
           <i class="fa-solid fa-microchip"></i> AI ENGINEERING STUDIO
         </div>
-        <h1 class="hero-title">
+        <h1 class="hero-title hero-animate hero-animate-2">
           Your AI.<br>
-          <span>Architected.</span><br>
+          <span class="hero-rotating-word" [class.fading]="isFading">{{ currentWord }}</span><br>
           Shipped. Scaled.
         </h1>
-        <p class="hero-subtitle">
+        <p class="hero-subtitle hero-animate hero-animate-3">
           End-to-end AI engineering for teams that need production systems
           — not another proof of concept.
         </p>
-        <div class="hero-ctas">
+        <div class="hero-ctas hero-animate hero-animate-4">
           <a href="#contact" class="btn-cta-primary">
             <i class="fa-solid fa-arrow-right" style="font-size:13px;"></i>
             Start a Project
@@ -30,27 +40,46 @@ import { CommonModule } from '@angular/common';
             Explore Services
           </a>
         </div>
-      </div>
-    </section>
-
-    <!-- Tech Strip — Authority signal (Cialdini) -->
-    <div class="tech-strip">
-      <div class="tech-strip-inner">
-        <div class="tech-label">WE BUILD WITH</div>
-        <div class="tech-logos">
-          <div class="tech-item"><i class="fa-brands fa-python"></i> Python</div>
-          <div class="tech-item"><i class="fa-brands fa-angular"></i> Angular</div>
-          <div class="tech-item"><i class="fa-brands fa-react"></i> React</div>
-          <div class="tech-item"><i class="fa-brands fa-aws"></i> AWS</div>
-          <div class="tech-item"><i class="fa-brands fa-docker"></i> Docker</div>
-          <div class="tech-item"><i class="fa-solid fa-brain"></i> LangChain</div>
-          <div class="tech-item"><i class="fa-solid fa-database"></i> PostgreSQL</div>
-          <div class="tech-item"><i class="fa-brands fa-node-js"></i> Node.js</div>
+        <div class="hero-tech-icons hero-animate-fade">
+          <i class="fa-brands fa-python"></i>
+          <i class="fa-brands fa-angular"></i>
+          <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-aws"></i>
+          <i class="fa-brands fa-docker"></i>
+          <i class="fa-solid fa-brain"></i>
+          <i class="fa-solid fa-database"></i>
+          <i class="fa-brands fa-node-js"></i>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="gradient-transition white-to-sage"></div>
   `
 })
-export class HeroComponent {}
+export class HeroComponent implements OnInit, OnDestroy {
+  words = ['Architected.', 'Deployed.', 'Scaled.'];
+  currentWord = this.words[0];
+  isFading = false;
+  private wordIndex = 0;
+  private intervalId: ReturnType<typeof setInterval> | null = null;
+
+  ngOnInit(): void {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
+    this.intervalId = setInterval(() => {
+      this.isFading = true;
+      setTimeout(() => {
+        this.wordIndex = (this.wordIndex + 1) % this.words.length;
+        this.currentWord = this.words[this.wordIndex];
+        this.isFading = false;
+      }, 400);
+    }, 3000);
+  }
+
+  ngOnDestroy(): void {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);
+    }
+  }
+}
