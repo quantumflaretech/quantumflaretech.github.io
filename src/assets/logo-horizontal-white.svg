@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 60">
+  <defs>
+    <linearGradient id="ent-a" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0D9488"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+    <linearGradient id="ent-b" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+    <radialGradient id="ent-glow">
+      <stop offset="0%" stop-color="#5EEAD4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Mark scaled to 48x48, centered vertically -->
+  <g transform="translate(24, 30) scale(0.094)">
+    <ellipse cx="256" cy="256" rx="200" ry="100"
+             fill="none" stroke="url(#ent-a)" stroke-width="28" opacity="0.85"
+             transform="rotate(-25 256 256)"/>
+    <ellipse cx="256" cy="256" rx="200" ry="100"
+             fill="none" stroke="url(#ent-b)" stroke-width="28" opacity="0.85"
+             transform="rotate(65 256 256)"/>
+    <ellipse cx="256" cy="256" rx="170" ry="60"
+             fill="none" stroke="#0D9488" stroke-width="8" opacity="0.3"
+             transform="rotate(20 256 256)"/>
+    <circle cx="110" cy="170" r="18" fill="#0D9488"/>
+    <circle cx="402" cy="342" r="18" fill="#0D9488"/>
+    <line x1="110" y1="170" x2="402" y2="342"
+          stroke="#14B8A6" stroke-width="3" opacity="0.3" stroke-dasharray="6 4"/>
+    <circle cx="256" cy="256" r="60" fill="url(#ent-glow)"/>
+    <circle cx="256" cy="256" r="28" fill="#14B8A6"/>
+    <circle cx="256" cy="256" r="10" fill="#FFFFFF" opacity="0.7"/>
+  </g>
+
+  <!-- Quantum Flare — white for dark backgrounds -->
+  <text x="60" y="32" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="22" fill="#FFFFFF" letter-spacing="-0.5">Quantum Flare</text>
+
+  <!-- TECHNOLOGIES -->
+  <text x="60" y="50" font-family="Inter, sans-serif" font-weight="500" font-size="9.5" fill="rgba(255,255,255,0.5)" letter-spacing="2">TECHNOLOGIES</text>
+</svg>
