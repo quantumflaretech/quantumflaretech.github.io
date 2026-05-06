@@ -822,6 +822,19 @@ body {
    RESPONSIVE
    ============================================ */
 @media (max-width: 1024px) {
+  .hero-section {
+    padding: 100px 32px 80px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-orbital {
+    width: 350px;
+    height: 350px;
+  }
+
   .bento-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -851,11 +864,11 @@ body {
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 100px 24px 72px;
+    padding: 80px 24px 60px;
   }
 
   .hero-title {
-    font-size: 38px;
+    font-size: 36px;
   }
 
   .hero-subtitle {
@@ -865,6 +878,32 @@ body {
   .hero-ctas {
     flex-direction: column;
     gap: 12px;
+  }
+
+  .hero-orbital {
+    display: none;
+  }
+
+  .hero-tech-icons {
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-animate {
+    animation-duration: 300ms;
+  }
+
+  .hero-animate-1 { animation-delay: 0ms; }
+  .hero-animate-2 { animation-delay: 75ms; }
+  .hero-animate-3 { animation-delay: 150ms; }
+  .hero-animate-4 { animation-delay: 225ms; }
+
+  .hero-animate-fade {
+    animation-delay: 300ms;
+    animation-duration: 200ms;
   }
 
   .services-section,
@@ -917,7 +956,11 @@ body {
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 32px;
+    font-size: 30px;
+  }
+
+  .hero-tech-icons {
+    display: none;
   }
 
   .hero-ctas .btn-cta-primary,
