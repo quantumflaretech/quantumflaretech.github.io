@@ -51,7 +51,7 @@ import { CommonModule } from '@angular/common';
           </div>
         </div>
         <div class="footer-line"></div>
-        <div class="footer-copy">&copy; 2025 Quantum Flare Technologies. All rights reserved.</div>
+        <div class="footer-copy">&copy; 2026 Quantum Flare Technologies. All rights reserved.</div>
       </div>
     </footer>
   `
