@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
         <a class="navbar-brand" href="#home">
           <img src="assets/logo-mark.svg" alt="" class="navbar-logo">
           <div class="navbar-brand-text">
-            <span class="navbar-brand-name">Quantum Flare</span>
+            <span class="navbar-brand-name">Quantum <span class="brand-accent">Flare</span></span>
             <span class="navbar-brand-sub">TECHNOLOGIES</span>
           </div>
         </a>

@@ -140,6 +140,10 @@ body {
   letter-spacing: -0.01em;
 }
 
+.brand-accent {
+  color: var(--accent-primary);
+}
+
 .navbar-brand-sub {
   font-family: 'Inter', sans-serif;
   font-size: 8.5px;

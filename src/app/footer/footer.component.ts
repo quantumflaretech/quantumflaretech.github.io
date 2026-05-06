@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
             <div class="footer-brand">
               <img src="assets/logo-mark.svg" alt="" class="footer-logo">
               <div class="footer-brand-text">
-                <span class="footer-brand-name">Quantum Flare</span>
+                <span class="footer-brand-name">Quantum <span class="brand-accent">Flare</span></span>
                 <span class="footer-brand-sub">TECHNOLOGIES</span>
               </div>
             </div>
