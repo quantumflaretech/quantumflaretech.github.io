@@ -12,9 +12,9 @@ import { CommonModule } from '@angular/common';
         <ellipse cx="250" cy="250" rx="220" ry="80" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(-15 250 250)"/>
         <ellipse cx="250" cy="250" rx="180" ry="120" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(35 250 250)"/>
         <ellipse cx="250" cy="250" rx="160" ry="200" fill="none" stroke="currentColor" stroke-width="1.5" transform="rotate(-60 250 250)"/>
-        <circle cx="470" cy="230" r="4" fill="currentColor"/>
-        <circle cx="120" cy="340" r="3" fill="currentColor"/>
-        <circle cx="300" cy="60" r="3.5" fill="currentColor"/>
+        <circle cx="440" cy="210" r="4" fill="currentColor"/>
+        <circle cx="80" cy="320" r="3" fill="currentColor"/>
+        <circle cx="280" cy="70" r="3.5" fill="currentColor"/>
       </svg>
 
       <div class="hero-inner">
@@ -57,7 +57,7 @@ import { CommonModule } from '@angular/common';
   `
 })
 export class HeroComponent implements OnInit, OnDestroy {
-  words = ['Architected.', 'Deployed.', 'Scaled.'];
+  words = ['Architected.', 'Deployed.', 'Optimized.'];
   currentWord = this.words[0];
   isFading = false;
   private wordIndex = 0;
