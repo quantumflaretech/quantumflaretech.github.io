@@ -49,6 +49,8 @@ import { CommonModule } from '@angular/common';
             <i class="fa-brands fa-aws"></i>
             <i class="fa-brands fa-docker"></i>
             <i class="fa-solid fa-brain"></i>
+            <i class="fa-solid fa-database"></i>
+            <i class="fa-brands fa-node-js"></i>
           </div>
         </div>
 
