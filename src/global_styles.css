@@ -912,7 +912,7 @@ body {
 .footer-brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   margin-bottom: 10px;
 }
 
