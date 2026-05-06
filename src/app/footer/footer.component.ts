@@ -44,8 +44,10 @@ import { CommonModule } from '@angular/common';
           <div>
             <h6>Contact</h6>
             <p>
-              <i class="fa-solid fa-envelope" style="color: var(--accent-primary); margin-right: 6px; font-size: 11px;"></i>
-              info&#64;quantumflaretechnologies.com
+              <a href="mailto:info@quantumflaretechnologies.com" style="color: var(--text-muted); text-decoration: none;">
+                <i class="fa-solid fa-envelope" style="color: var(--accent-primary); margin-right: 6px; font-size: 11px;"></i>
+                info&#64;quantumflaretechnologies.com
+              </a>
             </p>
             <p style="margin-top: 8px;">
               <i class="fa-solid fa-location-dot" style="color: var(--accent-primary); margin-right: 6px; font-size: 11px;"></i>
