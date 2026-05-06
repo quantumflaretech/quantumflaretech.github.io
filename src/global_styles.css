@@ -361,9 +361,9 @@ body {
 .hero-tech-icons-track {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 28px;
   width: max-content;
-  animation: marquee 20s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 
 .hero-tech-icons-track i {
