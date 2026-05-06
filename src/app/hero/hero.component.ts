@@ -43,14 +43,25 @@ import { CommonModule } from '@angular/common';
             </a>
           </div>
           <div class="hero-tech-icons hero-animate-fade">
-            <i class="fa-brands fa-python"></i>
-            <i class="fa-brands fa-angular"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-aws"></i>
-            <i class="fa-brands fa-docker"></i>
-            <i class="fa-solid fa-brain"></i>
-            <i class="fa-solid fa-database"></i>
-            <i class="fa-brands fa-node-js"></i>
+            <div class="hero-tech-icons-track">
+              <i class="fa-brands fa-python"></i>
+              <i class="fa-brands fa-angular"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-aws"></i>
+              <i class="fa-brands fa-docker"></i>
+              <i class="fa-solid fa-brain"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-node-js"></i>
+              <!-- Duplicate for seamless loop -->
+              <i class="fa-brands fa-python"></i>
+              <i class="fa-brands fa-angular"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-aws"></i>
+              <i class="fa-brands fa-docker"></i>
+              <i class="fa-solid fa-brain"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-node-js"></i>
+            </div>
           </div>
         </div>
 

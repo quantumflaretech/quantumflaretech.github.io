@@ -352,16 +352,30 @@ body {
 }
 
 .hero-tech-icons {
-  display: flex;
-  align-items: center;
-  gap: 24px;
   margin-top: 56px;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
-.hero-tech-icons i {
+.hero-tech-icons-track {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.hero-tech-icons-track i {
   font-size: 18px;
   color: var(--text-muted);
   opacity: 0.6;
+  flex-shrink: 0;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .hero-rotating-word {
@@ -520,6 +534,10 @@ body {
   }
 
   .terminal-cursor {
+    animation: none;
+  }
+
+  .hero-tech-icons-track {
     animation: none;
   }
 }
