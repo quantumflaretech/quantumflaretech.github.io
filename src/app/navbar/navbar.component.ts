@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#home">
-          <i class="fa-solid fa-bolt"></i>
+          <img src="assets/logo-concept-entangled.svg" alt="Quantum Flare logo" class="navbar-logo">
           Quantum Flare
         </a>
 

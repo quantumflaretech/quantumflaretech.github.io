@@ -126,9 +126,10 @@ body {
   text-decoration: none;
 }
 
-.navbar-brand i {
-  color: var(--accent-primary);
-  font-size: 15px;
+.navbar-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
 }
 
 .navbar-nav .nav-link {
@@ -898,9 +899,10 @@ body {
   gap: 8px;
 }
 
-.footer-brand i {
-  color: var(--accent-primary);
-  font-size: 14px;
+.footer-logo {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
 }
 
 .footer p {

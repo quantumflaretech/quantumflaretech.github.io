@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
         <div class="footer-grid">
           <div>
             <div class="footer-brand">
-              <i class="fa-solid fa-bolt"></i>
+              <img src="assets/logo-concept-entangled.svg" alt="Quantum Flare logo" class="footer-logo">
               Quantum Flare Technologies
             </div>
             <p>AI engineering for teams that ship.</p>
@@ -46,7 +46,7 @@ import { CommonModule } from '@angular/common';
             </p>
             <p style="margin-top: 8px;">
               <i class="fa-solid fa-location-dot" style="color: var(--accent-primary); margin-right: 6px; font-size: 11px;"></i>
-              Koramangala, Bangalore 560034
+               #323, 1st F Main Road, Koramangala 8th Block, Banglore, India - 560034
             </p>
           </div>
         </div>

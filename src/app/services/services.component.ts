@@ -79,7 +79,7 @@ export class ServicesComponent {
       title: 'Cloud Infrastructure',
       description: 'Scalable architecture designed for growth from day one. No surprise cloud bills, no single points of failure, no late-night firefighting.',
       outcome: 'Infra that grows with you, not against you',
-      featured: true
+      featured: false
     }
   ];
 }
